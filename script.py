@@ -104,3 +104,100 @@ print(class_locations[4])
 # Assignment: write a summary of data structures 
 # (lists, dictionaries, sets and tuples) in python
 # focussing on their immutaability, mutability and
+#compare if two is equal two three
+print(2==3)
+print("michael" < "ryan")
+Sales_target = 350
+sales_made = 300
+# compare sales made to the sales target
+#if sales made is greater than or equal to the sales target
+if sales_made > Sales_target:
+    print("You have met your target")
+elif sales_made < Sales_target:
+    print("You have not met your target")
+# create a new list
+prices = [90.9, 30.3, 80.4, 3.3, 0.2]
+print(prices[2]>prices[0])
+#for value in sequence: action
+for price in prices:print(price)
+if price>10:
+    print("price is greater than 10")
+elif price<100:
+    print("price is less than 100")
+elif price>5:
+    print("price is greater than 5")  
+for price in range (6,14):
+    print(price)
+#bulding a counter
+attendance = 0
+for i in range(6,14):
+    attendance += 1
+print(attendance)
+stock = 10
+number_of_purchases = 0
+while number_of_purchases < stock:
+    number_of_purchases += 1
+    print(stock - number_of_purchases)
+#create a new list
+names = ["liam", "leo", "kennedy", "kamau", "keith", "wayne", "james"]
+names.append("coventry")
+print(names)
+if "coventry" not in names:
+    print("coventry is not in the list") 
+    if "coventry" not in names:
+        print("coventry is not in the list")
+    else:
+        print("coventry is in the list")        
+#create dictionary
+
+expensive_product = []
+
+shopping_list = {"apples": 20.5, "bananas": 24, "oranges": 7, "grapes": 30, "mangoes": 6, "pears": 8}
+for key, val in shopping_list.items():
+    if val>=20:
+        expensive_product.append(key)
+print(expensive_product)
+
+#covert dictionary files to a list
+items_in_shopping_list = list(shopping_list.items())
+for items in items_in_shopping_list:
+    print(items)
+#intialize list to store expensive products
+expensive_products = []
+#loop through the dictionary
+while shopping_list:
+    #create a list of keys to avoid modifying the dictionary after interaction
+    keys_to_remove=[]
+    for key, val in shopping_list.items():
+        if val>=20:
+            expensive_products.append(key)
+            keys_to_remove.append(key)
+    #remove the keys after the iteration
+    for key in keys_to_remove:
+        shopping_list.pop(key)
+#move to the next item
+print(expensive_products)
+# create new list
+items_2 = {33.9 , 2.4 , 4.98 , 55 , 2 , 34}
+#truncate the longer list to match the shorter list
+min_length = min(len(keys), len(values))
+keys = keys[:min_length]
+values = values[:min_length]
+#using zip() to combine keys and values
+keys = list(shopping_list.keys())
+values = list(items_2)
+combined = zip(keys,values)
+print(list(combined))
+
+
+
+
+
+
+
+
+
+
+
+    
+
