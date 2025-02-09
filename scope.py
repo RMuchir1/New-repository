@@ -24,7 +24,7 @@ def mod2plus5(x1, x2, x3):
     return new_x1, new_x2, new_x3
 print(mod2plus5(2,3,4))
 
-#lets now solve the problem using nested functions
+#lets now solve the problem using nested functionsgit
 def mod2plus5_1(x1,x2,x3):
     '''this fuction returns the remainder plus 5 of three variables'''
     def inner(x):
